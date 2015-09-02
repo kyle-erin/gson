@@ -3,7 +3,7 @@ package com.pri;
 import java.util.Arrays;
 
 /**
- * Created by kyle on 8/27/2015.
+ * Holds cars.
  */
 public class Lot {
     public Car[] mCars;
@@ -30,4 +30,10 @@ public class Lot {
         str.append(mName);
         return str.toString();
     }
+
+    public int size()
+    {
+        return mCars.length;
+    }
+
 }
