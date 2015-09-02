@@ -1,7 +1,7 @@
 package com.pri;
 
 /**
- * Created by kyle on 8/27/2015.
+ * A type of car.
  */
 public enum CarType {
     Sedan, Coupe, Convertible, Sport, Wagon, Hybrid, Electric
