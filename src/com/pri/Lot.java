@@ -1,16 +1,17 @@
 package com.pri;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
  * Holds cars.
  */
 public class Lot {
-    public Car[] mCars;
+    public ArrayList<Car> mCars;
     public String mName;
     public String mAddress;
 
-    public Lot(Car[] tCars, String name, String address)
+    public Lot(ArrayList<Car> tCars, String name, String address)
     {
         mCars = tCars;
         mName = name;
@@ -19,21 +20,21 @@ public class Lot {
 
     public String toString()
     {
-        StringBuilder str = new StringBuilder();
-        str.append("Cars: ");
-        str.append(Arrays.toString(mCars));
-        str.append("\n");
-        str.append("Address: ");
-        str.append(mAddress);
-        str.append("\n");
-        str.append("Name: ");
-        str.append(mName);
-        return str.toString();
+        String str = "";
+        str += "Cars: ";
+        str += Arrays.toString(mCars.toArray());
+        str += "\n";
+        str += "Address: ";
+        str += mAddress;
+        str += "\n";
+        str += "Name: ";
+        str += mName;
+        return str;
     }
 
     public int size()
     {
-        return mCars.length;
+        return mCars.size();
     }
 
 }
